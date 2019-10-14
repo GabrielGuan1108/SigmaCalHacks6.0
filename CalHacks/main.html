@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Merriweather');
+    /*-----------------------------*/
+    /* General */
+    /*-----------------------------*/
+    html {
+        scroll-behavior: smooth;
+        overflow-y: scroll;	
+    }
+        
+    body {
+        font-family: "Lato", sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        color: #7a7a7a;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Alegreya", sans-serif;
+        margin-top: 0;
+        margin-bottom: 10px;
+           text-transform: uppercase;
+        color: #121212;
+        letter-spacing: 0.08em;
+        font-weight: 700;
+        line-height: 2; 
+    }
+
+    h1 {
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 24px; 
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 21px; 
+    }
+
+    h4 {
+        font-size: 20px; 
+    }
+
+    h5 {
+        font-size: 18px; 
+    }
+
+    h6 {
+        font-size: 15px; 
+    }	
+    
+    /*-----------------------------*/
+    /* Home Title */
+    /*-----------------------------*/
+    
+    .home {
+        background: url(img/home.JPG);
+        background-position: center;
+        background-size: cover;
+        color: #ffffff;
+        height: 80%;
+        position: relative;
+        text-align: center; 
+        }
+    
+    /*-----------------------------*/
+    /* Menu Bar */
+    /*-----------------------------*/
+    .menu {
+        cursor: pointer;
+        overflow: hidden;
+          background-color: #333;
+          position: fixed; 
+          top: 0; 
+          width: 100%; 
+        z-index: 100000;
+    }
+    
+    .menu a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .menu a:hover {
+          background: #ddd;
+          color: black;
+    }
+        
+
+    /*-----about section-----*/
+    .about {
+        margin: 10%;
+        margin-top: 15px;
+    }	
+    p {
+          font-size: 20px;
+          color: #7a7a7a;
+          font-weight: normal;
+          line-height: 35px;
+          margin: 0 0 10px; 
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }	
+
+    .container {
+        /*background: url(img/home.JPG);
+        background-position: center;
+        background-size: cover;
+        margin: 3em;
+        margin-top: 90px;
+        padding: 3em;
+        max-width: 90vw;
+        text-align: center;*/
+        background: url(img/home.JPG);
+        background-position: center;
+        background-size: cover;
+        color: #ffffff;
+        height: 100%;
+        position: relative;
+        text-align: center; 
+        margin: 0;
+        margin-top: 90px;
+        padding: 15em;
+        max-width: 90vw;
+        text-align: center;
+        }
+
+    header {
+        font-size: 23px;
+        letter-spacing: 10px;
+        padding: 150px 20px 20px 20px;
+    }
+    h2 {
+        letter-spacing: 3px;
+    }
+
+    .img-img {
+        height: 400px;
+        width:auto;
+    }
+    
+    /*----- Bottom Footer -----*/	
+    .copyright {
+          font-size: 13px;
+          line-height: 32px; }
+      .copyright a {
+        color: #7a7a7a; }
+      .copyright a:hover {
+            color: #121212; }
+        
+</style>
+
+<body>
+    	<!-- Add a menu bar on the top -->
+		<div class="menu">
+            <a href="">Home</a>
+            <a href="#About">About</a>
+            <a href ="#gallery">Explore</a>
+            <a href ="#Recipe">Design</a>
+            
+        </div>
+		<!-- End of the menu bar -->
+		
+	
+		<!-- Big title: Gallery of Albany Bulb -->
+		<a name = "home">
+		<div class="container">
+			<header><h1>Design your Diet</h1></header>
+		</div>
+        <hr> <!-- end of big title -->
+
+        <!-- Copy Right -->
+        <div class="col-md-4 text-right text-sm-center">
+                <div class="copyright">
+                  &copy; 2019 Sigma Team
+                </div>
+                <div class="copyright">
+              </div>
+
+</body>
+</html>
