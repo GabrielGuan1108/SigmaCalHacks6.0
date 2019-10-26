@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Merriweather');
@@ -28,7 +29,7 @@
         font-family: "Alegreya", sans-serif;
         margin-top: 0;
         margin-bottom: 10px;
-           text-transform: uppercase;
+        text-transform: uppercase;
         color: #121212;
         letter-spacing: 0.08em;
         font-weight: 700;
@@ -36,13 +37,9 @@
     }
 
     h1 {
-        font-size: 35px;
+        font-size: 37px;
         text-transform: uppercase;
-    }
-
-    h2 {
-        font-size: 24px; 
-        text-align: center;
+        color: rgb(255, 255, 255);
     }
 
     h3 {
@@ -62,36 +59,22 @@
     }	
     
     /*-----------------------------*/
-    /* Home Title */
-    /*-----------------------------*/
-    
-    .home {
-        background: url(img/home.JPG);
-        background-position: center;
-        background-size: cover;
-        color: #ffffff;
-        height: 80%;
-        position: relative;
-        text-align: center; 
-        }
-    
-    /*-----------------------------*/
     /* Menu Bar */
     /*-----------------------------*/
     .menu {
         cursor: pointer;
         overflow: hidden;
-          background-color: #333;
-          position: fixed; 
-          top: 0; 
-          width: 100%; 
+        background-color:rgb(4, 125, 141);
+        position: fixed; 
+        top: 0; 
+        width: 100%; 
         z-index: 100000;
     }
     
     .menu a {
         float: left;
         display: block;
-        color: #f2f2f2;
+        color: rgb(255, 255, 255);
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -105,7 +88,7 @@
     /*-----about section-----*/
     .about {
         margin: 10%;
-        margin-top: 15px;
+        margin-top: 12%;
     }	
     p {
           font-size: 20px;
@@ -114,85 +97,100 @@
           line-height: 35px;
           margin: 0 0 10px; 
     }
-    a {
-        color: black;
-        text-decoration: none;
-    }	
 
     .container {
-        /*background: url(img/home.JPG);
+        background: url(img/homebg.JPG);
         background-position: center;
-        background-size: cover;
-        margin: 3em;
-        margin-top: 90px;
-        padding: 3em;
-        max-width: 90vw;
-        text-align: center;*/
-        background: url(img/home.JPG);
-        background-position: center;
-        background-size: cover;
-        color: #ffffff;
+        background-size: cover;                     
+        background-repeat:   no-repeat;
         height: 100%;
         position: relative;
         text-align: center; 
-        margin: 0;
-        margin-top: 90px;
-        padding: 15em;
-        max-width: 90vw;
-        text-align: center;
+        margin-top: 40px;
+        padding: 11em;
+        position: relative;
+        max-width: 100%;
         }
 
-    header {
+    .container header {
         font-size: 23px;
         letter-spacing: 10px;
-        padding: 150px 20px 20px 20px;
+        padding: 110px 20px 20px 20px;
     }
     h2 {
         letter-spacing: 3px;
     }
 
-    .img-img {
-        height: 400px;
-        width:auto;
+    /*-----------------------------*/
+    /* Gallery */
+    /*-----------------------------*/
+    .row img {
+        padding: 10px;;
     }
-    
+
     /*----- Bottom Footer -----*/	
     .copyright {
-          font-size: 13px;
-          line-height: 32px; }
-      .copyright a {
-        color: #7a7a7a; }
-      .copyright a:hover {
-            color: #121212; }
+        font-size: 13px;
+        line-height: 32px; 
+        text-align: center;
+        }
+     
         
 </style>
 
 <body>
     	<!-- Add a menu bar on the top -->
 		<div class="menu">
-            <a href="">Home</a>
-            <a href="#About">About</a>
-            <a href ="#gallery">Explore</a>
-            <a href ="#Recipe">Design</a>
+            <a href="main.html">Home</a>
+            <a href="#about">About</a>
+            <a href ="#explore">Explore</a>
+            <a href ="#recipe">Design</a>
             
-        </div>
-		<!-- End of the menu bar -->
+        </div> <!-- End of the menu bar -->
 		
 	
-		<!-- Big title: Gallery of Albany Bulb -->
+		<!-- Big title: Design your Diet-->
 		<a name = "home">
 		<div class="container">
 			<header><h1>Design your Diet</h1></header>
-		</div>
-        <hr> <!-- end of big title -->
+        </div>
+		</a>
 
+        <!-- About Section -->
+        <a name = "about">
+            <div class = "Introduce about design diet">
+                <p>
+                    Are you still hensitating about what to eat today? 
+                    Are you on diet and struggling balancing the colurie intake?
+                    Come to Design Your Diet and and get a detailed meal scheduel!
+                    By simply choose what you want to eat, 
+                    we will plan out all your meals for the whole day from brackfest to dinner into every detail,
+                    giving the most decilious dishes & telling you how to cook it if you want make your own food, 
+                    as well as controlling the total coluries & nurition intake.
+                    No need to eat salad or chicken breast everyday!
+                    Design Diet dedicated to be your most capable personal Michelin star chef, 
+                    giving you the most decilious scientific meal plan.
+                    Are you interested in it?
+                    Click on log in and enjoy the service!
+                </p>
+            </div>
+        </a>
+
+        <!-- Gallery section begins -->
+        <main class="row">
+            <div class="col-4"><img src="img/1.jpg" alt="chicken" /></div>
+            <div class="col-4"><img src="img/2.jpg" alt="Sample photo" /></div>
+            <div class="col-4"><img src="img/3.jpg" alt="Sample photo" /></div>
+            <div class="col-4"><img src="img/1.jpg" alt="Sample photo" /></div>
+            <div class="col-4"><img src="img/1.jpg" alt="Sample photo" /></div>
+            <div class="col-4"><img src="img/1.jpg" alt="Sample photo" /></div>
+        </main>
+ 
         <!-- Copy Right -->
-        <div class="col-md-4 text-right text-sm-center">
-                <div class="copyright">
-                  &copy; 2019 Sigma Team
-                </div>
-                <div class="copyright">
-              </div>
+        <div class="copyright">
+            &copy; 2019 Sigma Team
+        </div> <!-- end of copy right-->
+        
 
 </body>
 </html>
