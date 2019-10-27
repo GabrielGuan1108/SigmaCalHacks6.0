@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+
+
+<script>
+        function printInputValue() {
+           var inputValue = document.getElementById("demo1").value;
+             console.log(inputValue);
+             document.getElementById("demo2").innerHTML = inputValue;
+          }
+     </script>
+
+
+
+
+
+<script type="text/javascript"> 
+    
+    function MM_jumpMenu(targ,selObj,restore){ //v3.0 
+    eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'"); 
+    if (restore) selObj.selectedIndex=0; 
+    } 
+    //--> 
+    </script> 
+
+<style type="text/css">
+    #box{
+        width: 380px;
+        margin: 30px auto;
+        font-family: 'Microsoft YaHei';
+        font-size: 14px;
+    }
+    input{
+        width: 260px;
+        border: 1px solid #e2e2e2;
+        height: 30px;
+        float: left;
+        background-image: url(images/search.jpg);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position:5px center;
+        padding:0 0 0 40px;
+    }
+    #search{
+        width: 78px;
+        height: 32px;
+        float: right;
+        background: black;
+        color: white;
+        text-align: center;
+        line-height: 32px;
+        cursor: pointer;
+    }
+  
+    label{
+        margin-left:400px;
+        font-family: 'Microsoft YaHei';
+        padding: 28px;
+        margin-left:460px;
+        font-size: 20px;
+    }
+    select{
+    margin-top:15px;
+        width: 200px;
+        margin-left:-10px;
+        font-family: 'Microsoft YaHei';
+        font-size: 20px;
+    }
+
+    option{
+        margin-top: 100px;
+        width: 380px;
+        margin-left:400px;
+        font-family: 'Microsoft YaHei';
+        padding: 28px;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+    <div id="box">
+        <input type="text" name="search" placeholder="请输入关键字">
+        <div id="search">搜索</div> 
+    </div>
+
+ 
+    <form action="" method="get"> 
+            <label>calories</label> 
+            <select name="jumpMenu" id="jumpMenu"
+             onchange="MM_jumpMenu('parent',this,0)"> 
+            <option value="http://www.divcss5.com/">500-1000</option> 
+            <option value="http://www.divcss5.com/">1000-2000</option> 
+            <option value="http://www.divcss5.com/">2000+</option> 
+            </select> 
+            </form> 
+    
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>JavaScript中获取input元素value值</title>
+                    <link rel="stylesheet" href="">
+
+
+                <script>
+                      function printInputValue() {
+                         var inputValue = document.getElementById("demo1").value;
+                           console.log(inputValue);
+                           document.getElementById("demo2").innerHTML = inputValue;
+                        }
+                   </script>
+
+
+            </head>
+            
+            
+                <body>
+                    <input type="text" id="demo1">
+                    <button onclick="printInputValue()">获取input元素value值</button>
+                    <p id="demo2"></p >
+                </body>
+            </html>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript"> 
+    
+        function MM_jumpMenu(targ,selObj,restore){ //v3.0 
+        eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'"); 
+        if (restore) selObj.selectedIndex=0; 
+        } 
+        //--> 
+        </script> 
+    
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Merriweather');
+    /*-----------------------------*/
+    /* General */
+    /*-----------------------------*/
+    html {
+        scroll-behavior: smooth;
+        overflow-y: scroll;	
+    }
+        
+    body {
+        font-family: "Lato", sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        color: #7a7a7a;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Alegreya", sans-serif;
+        margin-top: 0;
+        margin-bottom: 10px;
+           text-transform: uppercase;
+        color: #121212;
+        letter-spacing: 0.08em;
+        font-weight: 700;
+        line-height: 2; 
+    }
+
+    h1 {
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 24px; 
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 21px; 
+    }
+
+    h4 {
+        font-size: 20px; 
+    }
+
+    h5 {
+        font-size: 18px; 
+    }
+
+    h6 {
+        font-size: 15px; 
+    }	
+    
+    /*-----------------------------*/
+    /* Home Title */
+    /*-----------------------------*/
+    
+    .home {
+        background: url(img/home.JPG);
+        background-position: center;
+        background-size: cover;
+        color: #ffffff;
+        height: 80%;
+        position: relative;
+        text-align: center; 
+        }
+    
+    /*-----------------------------*/
+    /* Menu Bar */
+    /*-----------------------------*/
+    .menu {
+        cursor: pointer;
+        overflow: hidden;
+          background-color: #333;
+          position: fixed; 
+          top: 0; 
+          width: 100%; 
+        z-index: 100000;
+    }
+    
+    .menu a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .menu a:hover {
+          background: #ddd;
+          color: black;
+    }
+        
+
+    /*-----about section-----*/
+    .about {
+        margin: 10%;
+        margin-top: 15px;
+    }	
+    p {
+          font-size: 20px;
+          color: #7a7a7a;
+          font-weight: normal;
+          line-height: 35px;
+          margin: 0 0 10px; 
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }	
+
+   
+        
+
+    header {
+        font-size: 23px;
+        letter-spacing: 10px;
+        padding: 150px 20px 20px 20px;
+    }
+    h2 {
+        letter-spacing: 3px;
+    }
+
+    .img1 {
+        margin-left:13px ;
+        height: 400px;
+        width:auto;
+    }
+   
+
+    
+    /*----- Bottom Footer -----*/	
+    .copyright {
+          font-size: 13px;
+          line-height: 32px;
+           }
+      .copyright a {
+        color: #7a7a7a; }
+      .copyright a:hover {
+            color: #121212; }
+
+
+    /*----- search -----*/	       
+    #box{
+        margin-top: 30px;
+        width: 380px;
+        margin: 30px auto;
+        font-family: 'Microsoft YaHei';
+        font-size: 14px;
+        padding: 28px;
+    }
+    input{
+        width: 260px;
+        border: 1px solid #e2e2e2;
+        height: 30px;
+        float: left;
+        background-image: url(images/search.jpg);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position:5px center;
+        padding:0 0 0 40px;
+        padding: 10px;
+    }
+    #search{
+        width: 78px;
+        height: 32px;
+        float: right;
+        background: rgb(51, 51, 51);
+        color: white;
+        text-align: center;
+        line-height: 32px;
+        cursor: pointer;
+        padding: 10px;
+    }     
+    label{
+        margin-top: 30px;
+        margin-left:400px;
+        font-family: 'Microsoft YaHei';
+        padding: 28px;
+        margin-left:460px;
+        font-size: 20px;
+    }
+    select{
+       
+        width: 200px;
+        margin-left:-10px;
+        font-family: 'Microsoft YaHei';
+        font-size: 20px;
+        
+    }
+
+    option{
+        width: 380px;
+        margin-left:400px;
+        font-family: 'Microsoft YaHei';
+
+        font-size: 20px;
+    }   
+        
+</style>
+
+<body>
+    	<!-- Add a menu bar on the top -->
+		<div class="menu">
+            <a href="">Home</a>
+            <a href="#About">About</a>
+            <a href ="#gallery">Explore</a>
+            <a href ="#Recipe">Design</a>
+            
+        </div>
+        <!-- End of the menu bar -->
+        
+        <div id="box">
+                <input type="text" name="search" placeholder="Find a recipe">
+                <div id="search">search</div> 
+        </div>
+        <form action="" method="get"> 
+                <label>calories</label> 
+                <select name="jumpMenu" id="jumpMenu"
+                 onchange="MM_jumpMenu('parent',this,0)"> 
+                <option value="https://www.allrecipes.com/recipe/17219/best-tuna-casserole/">500-1000</option> 
+                <option value="https://www.allrecipes.com/recipe/17219/best-tuna-casserole/">1000-2000</option> 
+                <option value="https://www.allrecipes.com/recipe/17219/best-tuna-casserole/">2000+</option> 
+                </select> 
+                </form> 
+    
+		
+	    <div class="img1">
+            <a href="https://www.allrecipes.com/recipe/263730/avocado-egg-in-a-hole/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%208">
+            <img src="img/avocado egg.jpg" width="300" height="300" hspace=3; vspace=10/>
+            </a>
+
+            <a href="https://www.allrecipes.com/recipe/52073/potato-arugula-salad/?internalSource=recipe%20hub&referringContentType=Search&clickId=cardslot%2027">
+            <img src="img/potato salad.jpg" width="300" height="300" hspace=3; vspace=10/> 
+             </a>
+
+            <a href="https://www.allrecipes.com/recipe/244251/no-cook-overnight-oatmeal/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%202">
+            <img src="img/oat.jpg"width="300" height="300" hspace=3; vspace=10/>
+            </a>
+
+            <a href="https://www.allrecipes.com/recipe/222350/authentic-pad-thai/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%207">
+            <img src="img/pad thai.jpg" width="300" height="300" hspace=3; vspace=10/> 
+            </a>
+
+            <a href="https://www.allrecipes.com/recipe/82503/spicy-baked-sweet-potato-fries/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%201">
+                <img src="mainpage_recipes/r7/Fiery Fish Tacos with Crunchy Corn Salsa.jpg" width="300" height="300" hspace=3; vspace=10/>
+                </a>
+               
+                <a href="https://www.allrecipes.com/recipe/235848/mexican-sushi/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%2011">
+                    <img src="img/sushi.jpg" width="300" height="300" hspace=3; vspace=10 /> 
+                    </a>
+
+             <a href="https://www.allrecipes.com/recipe/259480/spicy-chicken-noodles/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%2015/">
+                        <img src="img/chicke noodle.jpg" width="300" height="300" hspace=3; vspace=10 /> 
+                       </a>  
+            
+             <a href="https://www.allrecipes.com/recipe/17219/best-tuna-casserole/">
+             <img src="img/tuna.jpg" width="300" height="300" hspace=3; vspace=10 /> 
+            </a> 
+
+            <a href="https://www.allrecipes.com/recipe/51283/maple-salmon/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%201">
+            <img src="mainpage_recipes/r1/Maple Salmon.jpg" width="300" height="300" hspace=3 vspace=10;/> 
+            </a>
+            <a href="https://www.allrecipes.com/recipe/266028/kimchi-udon-noodle-stir-fry/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%208">
+                <img src="img/udon.jpg" width="300" height="300" hspace=3; vspace=10 /> 
+               </a>  
+            <a href="https://www.allrecipes.com/recipe/98579/barbies-tuna-salad/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%208">
+                <img src="img/tuna salad.jpg" width="300" height="300" hspace=3; vspace=10 /> 
+                </a>
+        
+            <a href="https://www.allrecipes.com/recipe/71698/sesame-seared-tuna/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%2012">
+                <img src="img/sesame tuna.jpg" width="300" height="300" hspace=3; vspace=10 /> 
+                </a>
+            
+               
+        
+        </div>
+
+      
+
+</body>
+</html>
